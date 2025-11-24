@@ -58,7 +58,7 @@ if st.button("보내기"):
                 model="gpt-5-mini",
                 input=messages_for_api,
             )
-            bot_reply = resp.output[0].content[0].text
+            bot_reply = resp.output_text
 
         st.session_state.chat_history.append(
             {"role": "assistant", "content": bot_reply}

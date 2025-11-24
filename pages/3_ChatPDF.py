@@ -105,7 +105,6 @@ if st.button("PDF에 질문하기"):
                     }
                 },
             )
-            answer = resp.output[0].content[0].text
-
+            answer = resp.output_text
         st.subheader("PDF 기반 답변")
         st.write(answer)
