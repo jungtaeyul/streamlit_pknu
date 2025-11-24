@@ -15,7 +15,7 @@ def get_single_answer(api_key: str, question: str) -> str:
         model="gpt-5-mini",  # 과제 요구 모델명
         input=question,
     )
-    return resp.output[0].content[0].text
+    return resp.output_text
 
 
 st.title("1. gpt-5-mini 단일 질문 페이지 (Home)")
