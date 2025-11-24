@@ -1,4 +1,0 @@
-streamlit
-openai>=1.50.0
-pypdf
-
